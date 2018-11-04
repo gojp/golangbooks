@@ -25,7 +25,9 @@
 {{ end }}
 
 {{ define "page" }}{{ template "header" . }}
+<div class="container">
   {{ .Content }}
+</div>
 {{ template "footer" . }}{{ end }}
 
 {{ define "post" }}
