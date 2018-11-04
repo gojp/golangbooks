@@ -1,5 +1,0 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "Golang Books"
-theme = "kube"
-publishDir = "docs"
