@@ -1,6 +1,6 @@
 TEMPLATES = site.tmpl
 SOURCE = src
-OUTPUT = site
+OUTPUT = docs
 TITLE = Golang Books
 URL = https://golangbooks.com/
 
