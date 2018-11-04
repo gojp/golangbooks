@@ -1,0 +1,13 @@
+title: Home
+----
+<section class="section">
+  <div class="container">
+  {{ range .Site.Pages.Children "books/" }}
+    <div class="column is-half is-offset-3">
+      <div class="content">
+          <a href="{{ $.Rel .Url }}"><img src="/static/images/{{ .Other.Image }}" />{{ .Title }}</a>
+      </div>
+    </div>
+  {{ end }}
+  </div>
+</section>

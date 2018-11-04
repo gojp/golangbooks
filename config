@@ -1,0 +1,26 @@
+TEMPLATES = site.tmpl
+SOURCE = src
+OUTPUT = site
+TITLE = Golang Books
+URL = https://golangbooks.com/
+
+books/*.md:
+	config
+	ext .html
+	directorify
+	tags tags/*.tag
+	markdown
+	template post
+	template page
+
+*.tag: books/*.md
+	ext .html
+	directorify
+	template tag
+	markdown
+	template page
+
+index.html: books/*.md
+	config
+	inner-template
+	template page
